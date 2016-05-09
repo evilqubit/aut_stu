@@ -1,5 +1,4 @@
-int sensorPin = A0; // Variable addressed to the analog pin A0 which Will receive
-the signal from the sensor 
+int sensorPin = A0; // Variable addressed to the analog pin A0 which Will receive the signal from the sensor 
  int sensorValue = 0; // variable that will store the value from  sensorPin
 
    void setup() {
@@ -8,14 +7,12 @@ the signal from the sensor
 
              void loop() {
                                // read the value from the sensor:
-                                 Serial.print("sensor = " );  //  Prints on the
-                                 serial the Word serial and the equal sign 
-                                   sensorValue = analogRead(sensorPin); // Reads
-                                   the value from the sensor and store in
-                                   sensorValue
+                                 Serial.print("sensor = " );  //  Prints on the serial the Word serial and the equal sign 
+                                   sensorValue = analogRead(sensorPin); 
+                                 
                                    delay(1000); 
-                                     Serial.println(sensorValue); // Prints on
-                                     the serial the value stored in sensorValue
+                                     Serial.println(sensorValue); 
+                               
 
 
              }
